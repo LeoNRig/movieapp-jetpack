@@ -1,0 +1,94 @@
+package org.example.project.previews
+
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import compose.icons.FontAwesomeIcons
+import compose.icons.fontawesomeicons.Solid
+import compose.icons.fontawesomeicons.solid.Star
+import org.example.project.domain.model.MovieSection
+import org.example.project.domain.model.movie1
+import org.example.project.ui.components.CastMemberItem
+import org.example.project.ui.components.MovieGenreChip
+import org.example.project.ui.components.MovieInfoItem
+import org.example.project.ui.components.MoviePoster
+import org.example.project.ui.moviedetail.MovieDetailScreen
+import org.example.project.ui.moviedetail.MovieDetailViewModel
+import org.example.project.ui.movies.MoviesListScreen
+import org.example.project.ui.movies.MoviesListViewModel
+import org.example.project.ui.theme.MoviesAppTheme
+
+@Preview
+@Composable
+private fun MoviePosterPreview() {
+    MoviePoster(
+        movie = movie1,
+        onMoviePosterClick = {}
+    )
+}
+
+@Preview
+@Composable
+private fun MoviesListScreenPreview() {
+    MoviesAppTheme {
+        MoviesListScreen(
+            moviesListState = MoviesListViewModel.MoviesListState.Sucess(
+                movieSection = listOf(
+                    MovieSection(
+                        sectionType = MovieSection.SectionType.POPULAR,
+                        movies = listOf(
+                            movie1
+                        ),
+
+                    )
+                )
+            ),
+            onMovieClick = {},
+        )
+
+    }
+
+}
+
+@Preview
+@Composable
+private fun MovieDetailScreenPreview() {
+    MoviesAppTheme {
+        MovieDetailScreen(
+            movieDetailState = MovieDetailViewModel.MovieDetailState.Sucess(movie1),
+            onNavigationIconClick = {},
+        )
+    }
+}
+
+@Preview
+@Composable
+private fun MovieInfoItemPreview() {
+    MoviesAppTheme {
+        MovieInfoItem(
+            icon = FontAwesomeIcons.Solid.Star,
+            text = "8.5"
+        )
+    }
+}
+@Preview
+@Composable
+private fun MovieGenreChipPreview() {
+    MoviesAppTheme {
+        MovieGenreChip(
+            genre = "Action"
+        )
+    }
+}
+@Preview
+@Composable
+private fun CastMemberItemPreview() {
+    MoviesAppTheme {
+        CastMemberItem(
+            profilePictureUrl = "url",
+            name = "Will",
+            character = "John Smith"
+        )
+    }
+}
