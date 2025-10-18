@@ -69,6 +69,7 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.xicon.pack.z)
             implementation(libs.kotlinx.datetime)
+            implementation(libs.mediaplayer.kmp)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
