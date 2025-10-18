@@ -1,3 +1,26 @@
+<img width="300" height="585" alt="Image" src = "https://github.com/user-attachments/assets/5f5d96fc-2e56-47a7-87b0-c020a7355e50">
+
+<img width="300" height="585" alt="Image" src = "https://github.com/user-attachments/assets/e55cfcb6-3ddb-4143-bf9e-d91ef0baac00">
+
+<img width="300" height="585" alt="Image" src = "https://github.com/user-attachments/assets/c127e914-1a0a-4d01-9431-efb04cd53827">
+
+### 🛠Tools
+KMP,
+ CMP,
+ KOTLIN,
+ JETPACK COMPOSE
+
+### 🧱Architecture
+MVVM
+
+### ⚙APIs / FrameWorks
+TMDb,
+ Koin,
+ Ktor,
+ Coroutines(Flow)
+
+ -----------------------------------------------------------
+
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
